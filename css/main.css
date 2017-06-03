@@ -17,12 +17,8 @@ body{
 }
 
 .navbar{
-  background-color: #7DDFE8
-  margin: 0;
-}
-
-.navbar{
   /*height: 114px;*/
+  background-color: #7DDFE8
   width: 100%;
   margin: 0;
   padding: 0;
@@ -55,7 +51,7 @@ body{
   background-image: url('../images/filmclub.png');
 }
 
-ul:first-of-type, ul:last-of-type{
+ul:first-of-type, ul:nth-of-type(3){
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

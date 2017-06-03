@@ -1,4 +1,155 @@
+
 @font-face{ src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 font-family: 'PT Sans', sans-serif;
 
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  color: #0B1942;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  width: 100vw;
+}
+
+.navbar{
+  /*height: 114px;*/
+  background-color: #7DDFE8
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.logo-box{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 114px;
+  width: 102px;
+  background-color: #f5005B;
+}
+
+.logo{
+  flex: 1 1 30%;
+  background-color: #F5005B;
+  background-position: top;
+  height: 92px;
+  width: 82px;
+  margin-top: 6px;
+  margin-right: 10px;
+  margin-bottom: 14px;
+  margin-left: 6px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/filmclub.png');
+}
+
+ul:first-of-type, ul:nth-of-type(3){
+  display: flex;
+  flex-flow: column nowrap;
+  /*justify-content: center;*/
+  margin: auto;
+  padding: 0;
+  text-decoration: none;
+}
+
+li{
+  background-color: #00A5BF;
+  height: 38px;
+  width: 100vw;
+  text-align: center;
+}
+
+li a{
+  color: #FFF;
+  text-decoration: none;
+  margin: auto;
+  line-height: 38px;
+  text-align: center;
+}
+
+li:nth-of-type(2){
+  background-color: #00B7D3;
+}
+li:nth-of-type(3){
+  background-color: #00D5E7;
+}
+
+
+h1, h3{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  padding: 35px 25px;
+  color: #0B1942;
+}
+
+.month{
+  background-color: #0B1942;
+  width: 100vw;
+  padding-bottom: 32px;
+}
+
+.month>h3{
+color: #FFF;
+margin: 1px;
+}
+
+.day-block{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 544px;
+  height: 256px;
+  padding-bottom: 32px;
+}
+
+.day{
+  height: 47px;
+  background-color: #FFF;
+  margin: 1px;
+
+  flex: 1 1 13%;
+}
+
+.num{
+  height: 26px;
+  width: 26px;
+  margin: 0;
+  padding: 0;
+  background-color: #0B1942;
+  color: #FFF;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 26px;
+}
+
+.day-block>.last-row{
+
+}
+
+.highlight{
+  background-color: #F5005B;
+}
+
+footer{
+  background-color: #7DDFE8;
+  color: #FFF;
+  text-align: center;
+  height: 70px;
+}
+
+footer>p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 70px;
 }
