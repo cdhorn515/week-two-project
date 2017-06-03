@@ -82,7 +82,43 @@ li:nth-of-type(3){
   background-color: #00D5E7;
 }
 
+h2{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 32px;
+}
 
+h2, form{
+  margin-left: 16px;
+}
+
+label{
+  margin-top: 20px;
+}
+
+.userpic{
+  margin-bottom: 5px;
+  height: 242px;
+  background-image: url('../images/profile-placeholder.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1 solid #FFF;
+  border-radius: 50%
+}
+
+
+.button{
+  width: 109px;
+  height: 54px;
+  /*line-height: 54px;*/
+  text-align: center;
+  background-color: #F5005B;
+  color: #FFF;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
 
 footer{
   background-color: #7DDFE8;
@@ -95,4 +131,12 @@ footer>p{
     margin: 0;
     font-size: 18px;
     line-height: 70px;
+}
+
+@media (min-width: 545px){
+
+}
+
+@media (min-width: 769px) {
+
 }
