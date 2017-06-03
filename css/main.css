@@ -22,7 +22,7 @@ body{
 }
 
 .navbar{
-  height: 114px;
+  /*height: 114px;*/
   width: 100%;
   margin: 0;
   padding: 0;
@@ -55,7 +55,7 @@ body{
   background-image: url('../images/filmclub.png');
 }
 
-ul{
+ul:first-of-type, ul:last-of-type{
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -74,6 +74,8 @@ li{
 li a{
   color: #FFF;
   text-decoration: none;
+  line-height: 38px;
+  text-align: center;
 }
 
 li:nth-of-type(2){
@@ -93,7 +95,7 @@ section{
   margin: 22px;
 }
 
-.blue-box{
+.hz-blue-heading{
   background-color: #0B1942;
   color: #FFF;
   height: 35px;
@@ -112,10 +114,8 @@ section:nth-child(3){
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  height: 912px;
+  align-items: flex-start;
   width: 100vw;
-  margin: 0;
   background: #0B1942;
   color: #FFF;
   font-family: 'PT Sans', sans-serif;
@@ -123,27 +123,41 @@ section:nth-child(3){
   font-size: 28px;
 }
 
-.up-next{
+.white-box{
   background-color: #E2E2E2;
-  background-image: url('../images/rashomon-poster.jpg');
-  height: 199px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  flex: 1 1 48%;
+  width: 100%;
+  margin: 15px;
+  flex: 1 1 100%;
+  z-index: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rashomom{
   z-index: 2;
+  margin: 15px;
+  /*background-image: url('../images/rashomon-poster.jpg');*/
+  /*background-size: contain;*/
+  /*background-repeat: no-repeat;*/
+  flex: 1 1 48%;
 }
-
 .film-info{
+  /*z-index: 2;*/
   color: #00B7D3;
+  flex: 1 1 48%;
 }
 
+h4{
+}
 #disc{
   list-style: circle;
   color: #0B1942;
-  background-color: #FFF;
-  height: 38px;
-  width: 100vw;
-  text-align: left;
+  background-color: inherit;
+  /*height: 38px;*/
+  /*width: 100vw;*/
+  text-align: inherit;
 }
 
 .upcoming-films{
@@ -152,27 +166,32 @@ section:nth-child(3){
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin: 15px;
+  padding: 15px;
+  color: #000;
 }
 
 .pic{
   flex: 1 1 48%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 199px;
+
+
+  /*height: 199px;*/
 }
 
-.pic-one{
-  background-image: url('../images/great-train-poster.jpg');
+section:nth-of-type(3){
+  margin: 0;
 }
 
-.pic-two{
-  background-image: url('../images/bicycle-thief-poster.jpg');
+footer{
+  background-color: #7DDFE8;
+  color: #FFF;
+  text-align: center;
+  height: 70px;
+  text-align: center;
 }
 
-.pic-three{
-  background-image: url('../images/nosferatu-poster.jpg');
-}
-
-.pic-four{
-  background-image: url('../images/metropolis-poster.jpg');
+footer>p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 70px;
 }
