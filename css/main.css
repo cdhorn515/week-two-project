@@ -7,34 +7,68 @@ font-family: 'PT Sans', sans-serif;
   box-sizing: border-box;
 }
 
+body{
+  color: #0B1942;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
 .navbar{
   background-color: #7DDFE8
   margin: 0;
 }
 
-body{
-  color: #0B1942;
-  background-color: #0B1942;
+.navbar{
+  height: 115px;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 
-/* FIXME:  */
+.logo-box{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 115px;
+  width: 102px;
+  background-color: #f5005B;
+}
+
 .logo{
-
+  flex: 1 1 30%;
   background-color: #F5005B;
-
+  background-position: top;
+  height: 92px;
+  width: 82px;
+  margin-top: 6px;
+  margin-right: 10px;
+  margin-bottom: 14px;
+  margin-left: 6px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/filmclub.png');
 }
 
 ul{
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  /*clear: left;*/
+  margin: 0;
+  padding: 0;
 }
+
 li{
   list-style: none;
+  text-decoration: none;
   background-color: #00A5BF;
   color: #FFF;
+  height: 38px;
+  width: 256px;
 }
 
 li{
@@ -44,4 +78,27 @@ li:nth-of-type(2){
 }
 li:nth-of-type(3){
   background-color: #00D5E7;
+}
+
+p{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 11px;
+  line-height: 1.9;
+}
+section{
+  text-align: left;
+  margin: 22px;
+}
+
+.blue-box{
+  background-color: #0B1942;
+  color: #FFF;
+  height: 35px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
 }
