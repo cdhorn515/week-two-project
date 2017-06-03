@@ -13,6 +13,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
+  width: 100vw;
 }
 
 .navbar{
@@ -21,7 +22,7 @@ body{
 }
 
 .navbar{
-  height: 115px;
+  height: 114px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -34,7 +35,7 @@ body{
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  height: 115px;
+  height: 114px;
   width: 102px;
   background-color: #f5005B;
 }
@@ -60,19 +61,21 @@ ul{
   justify-content: center;
   margin: 0;
   padding: 0;
-}
-
-li{
-  list-style: none;
   text-decoration: none;
-  background-color: #00A5BF;
-  color: #FFF;
-  height: 38px;
-  width: 256px;
 }
 
 li{
+  background-color: #00A5BF;
+  height: 38px;
+  width: 100vw;
+  text-align: center;
 }
+
+li a{
+  color: #FFF;
+  text-decoration: none;
+}
+
 li:nth-of-type(2){
   background-color: #00B7D3;
 }
@@ -101,4 +104,75 @@ section{
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   font-weight: lighter;
+}
+section:nth-child(3){
+  margin: 0;
+}
+.big-blue-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 912px;
+  width: 100vw;
+  margin: 0;
+  background: #0B1942;
+  color: #FFF;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 28px;
+}
+
+.up-next{
+  background-color: #E2E2E2;
+  background-image: url('../images/rashomon-poster.jpg');
+  height: 199px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: 1 1 48%;
+  z-index: 2;
+}
+
+.film-info{
+  color: #00B7D3;
+}
+
+#disc{
+  list-style: circle;
+  color: #0B1942;
+  background-color: #FFF;
+  height: 38px;
+  width: 100vw;
+  text-align: left;
+}
+
+.upcoming-films{
+  background-color: #E2E2E2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic{
+  flex: 1 1 48%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 199px;
+}
+
+.pic-one{
+  background-image: url('../images/great-train-poster.jpg');
+}
+
+.pic-two{
+  background-image: url('../images/bicycle-thief-poster.jpg');
+}
+
+.pic-three{
+  background-image: url('../images/nosferatu-poster.jpg');
+}
+
+.pic-four{
+  background-image: url('../images/metropolis-poster.jpg');
 }
