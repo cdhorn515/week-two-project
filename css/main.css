@@ -67,11 +67,17 @@ li{
   text-align: center;
 }
 
-li a{
+li>a{
   color: #FFF;
   text-decoration: none;
   line-height: 38px;
   text-align: center;
+}
+
+.lower-pg li>a{
+  padding-left: 0;
+  /*width: 100vw;*/
+  /*margin: 0;*/
 }
 
 li:nth-of-type(2){

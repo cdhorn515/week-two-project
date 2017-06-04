@@ -19,8 +19,8 @@ body{
 
 .navbar{
   /*height: 114px;*/
-  background-color: #7DDFE8
-  width: 100%;
+  background-color: #7DDFE8;
+  width: 100vw;
   margin: 0;
   padding: 0;
   display: flex;
@@ -29,51 +29,78 @@ body{
 }
 
 .logo-box{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  height: 114px;
-  width: 102px;
+  /*display: flex;*/
+  /*flex-flow: row nowrap;*/
+  /*justify-content: center;*/
+  position: absolute;
+  margin: 0;
+  height: 20.08vh;
+  width: 31.88vw;
   background-color: #f5005B;
 }
 
 .logo{
-  flex: 1 1 30%;
+  /*flex: 1 1 30%;*/
+  position: absolute;
   background-color: #F5005B;
   background-position: top;
-  height: 92px;
-  width: 82px;
-  margin-top: 6px;
-  margin-right: 10px;
-  margin-bottom: 14px;
-  margin-left: 6px;
+  height: 16.2vh;
+  width: 25.63vw;
+  margin-top: 1.75vh;
+  margin-right: 3.13vw;
+  margin-bottom: 2.46vh;
+  margin-left: 2.5vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../images/filmclub.png');
 }
 
-ul:first-of-type, ul:nth-of-type(3){
+ul{
+  list-style: none;
   display: flex;
   flex-flow: column nowrap;
-  /*justify-content: center;*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  flex: 1 1 73%;
+}
+
+/*ul:first-of-type, ul:nth-of-type(3){
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   margin: auto;
   padding: 0;
   text-decoration: none;
-}
+}*/
 
 li{
   background-color: #00A5BF;
-  height: 38px;
+  height: 6.69vh;
   width: 100vw;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  line-height: 6.69vh;
 }
 
-li a{
+li>a{
   color: #FFF;
   text-decoration: none;
-  margin: auto;
-  line-height: 38px;
-  text-align: center;
+  /*margin: auto;*/
+  /*line-height: 38px;*/
+  /*text-align: center;*/
+  padding-left: 25.63vw;
+}
+.lower-pg li>a{
+  padding-left: 0;
+  /*width: 100vw;*/
+  /*margin: 0;*/
+}
+
+ul:first-child, ul:nth-child(3){
+  margin: 0;
 }
 
 li:nth-of-type(2){
@@ -88,14 +115,15 @@ h1, h3{
   font-family: 'PT Sans', sans-serif;
   font-size: 32px;
   font-weight: lighter;
-  padding: 35px 25px;
+  padding: 3.52vh 7.8125vw;
   color: #0B1942;
+  margin: 0;
 }
 
 .month{
   background-color: #0B1942;
   width: 100vw;
-  padding-bottom: 32px;
+  /*padding-bottom: 5.63vh;*/
 }
 
 .month>h3{
@@ -103,34 +131,36 @@ color: #FFF;
 margin: 1px;
 }
 
-.day-block{
+.container{
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 544px;
-  height: 256px;
-  padding-bottom: 32px;
+  width: 100%;
+  /*height: 256px;*/
+  border: 0.3125vw solid #0B1942;
+  padding-bottom: 5.63vh;
 }
 
 .day{
-  height: 47px;
+  height: 8.27vh;
+  /*width: auto;*/
   background-color: #FFF;
   margin: 1px;
-
-  flex: 1 1 13%;
+  flex-basis: 13.65%;
+  /*flex: 1 1 13%;*/
 }
 
 .num{
-  height: 26px;
-  width: 26px;
+  height: 4.577vh;
+  width: 8.125vw;
   margin: 0;
   padding: 0;
   background-color: #0B1942;
   color: #FFF;
   font-weight: bolder;
   text-align: center;
-  line-height: 26px;
+  line-height: 4.577vh;
 }
 
 .day-block>.last-row{
@@ -152,4 +182,12 @@ footer>p{
     margin: 0;
     font-size: 18px;
     line-height: 70px;
+}
+
+@media (min-width: 545px) {
+
+}
+
+@media (min-width: 769px) {
+
 }
