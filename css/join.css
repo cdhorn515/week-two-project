@@ -1,6 +1,5 @@
 @font-face{ src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 font-family: 'PT Sans', sans-serif;
-
 }
 
 *{
@@ -17,9 +16,9 @@ body{
 }
 
 .navbar{
-
+  /*position: absolute;*/
   background-color: #7DDFE8;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   padding: 0;
   display: flex;
@@ -28,25 +27,27 @@ body{
 }
 
 .logo-box{
-  display: flex;
-  flex-flow: row nowrap;
+  /*display: flex;*/
+  /*flex-flow: row nowrap;*/
   /*justify-content: center;*/
-  margin: auto;
+  position: absolute;
+  margin: 0;
   height: 114px;
   width: 102px;
   background-color: #f5005B;
 }
 
 .logo{
-  flex: 1 1 30%;
+  /*flex: 1 1 30%;*/
+  position: absolute;
   background-color: #F5005B;
   background-position: top;
   height: 92px;
   width: 82px;
-  margin-top: 6px;
+  margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 14px;
-  margin-left: 6px;
+  margin-left: 8px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../images/filmclub.png');
@@ -56,9 +57,10 @@ ul{
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
-  margin: auto;
+  margin: 0;
   padding: 0;
   text-decoration: none;
+  flex: 1 1 73%;
 }
 
 li{
@@ -66,23 +68,29 @@ background-color: #00A5BF;
   height: 38px;
   width: 100vw;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   color: #FFF;
+  line-height: 38px;
 }
 
-li a{
+li>a{
   color: #FFF;
-  height: 38px;
-  width: 100;
-  text-align: center;
+  /*height: 38px;*/
+  /*width: 100%;*/
   text-decoration: none;
-  margin: 0 auto;
-  line-height: 38px;
-  text-align: center;
+  /*margin: 0 auto;*/
+  /*line-height: 38px;*/
+  /*text-align: center;*/
+  padding-left: 82px;
+}
+.lower-pg li>a{
+  padding-left: 0;
+  /*width: 100vw;*/
+  /*margin: 0;*/
 }
 
 ul:first-child, ul:nth-child(3){
-  margin: 0 auto;
+  margin: 0;
 }
 
 li:nth-of-type(2){
@@ -99,24 +107,31 @@ section:last-of-type{
 h2{
   font-family: 'PT Sans', sans-serif;
   font-weight: lighter;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 h2, form{
   margin-left: 16px;
+  margin-right: 16px;
+}
+
+legend{
+  padding-top: 23px;
+  border-style: none;
+  margin-bottom: 14px;
 }
 
 label, p{
   margin-top: 20px;
 }
 
-.userpic>img{
+img{
   margin-bottom: 5px;
   height: 292px;
   margin-top: 18px;
   border-radius: 100%;
+  text-align: center;
 }
-
 
 #submit{
   width: 109px;
