@@ -250,9 +250,10 @@ color: #0B1942;
   flex-flow: row wrap;
   justify-content: center;
   align-content: flex-start;
-  margin: 3.688vw;
+  margin: 4.688vw;
   padding: 0;
   color: #000;
+  width: 91vw;
 }
 
 .pic img{
@@ -272,6 +273,7 @@ figcaption>a{
   font-weight: lighter;
   font-size: 11px;
   margin: 0;
+  padding: 0;
   /*margin-left: 10px;*/
 }
 
@@ -280,8 +282,10 @@ figcaption{
   font-family: 'PT Sans', sans-serif;
   /*font-weight: lighter;*/
   font-size: 11px;
-  margin-left: 10px;
+  margin: 0;
+  margin-left: 3.125vw;
   line-height: 1.8px;
+  padding: 8px 0;
 }
 
 footer{
