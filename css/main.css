@@ -18,7 +18,8 @@ body{
 .navbar{
   /*height: 114px;*/
   background-color: #7DDFE8;
-  width: 100vw;
+  width: 100%;
+  height: 114px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -32,22 +33,31 @@ body{
   /*justify-content: center;*/
   margin: 0;
   position: absolute;
-  height: 20.08vh;
-  width: 31.88vw;
+  /*height: 20.08vh;*/
+  height: 114px;
+  width: 102px;
+  /*width: 31.88vw;*/
   background-color: #f5005B;
 }
 
 .logo{
+  flex: 1 1 auto;
   /*flex: 1 1 30%;*/
   position: absolute;
   background-color: #F5005B;
   background-position: top;
-  height: 16.2vh;
-  width: 25.63vw;
-  margin-top: 1.75vh;
+  height: 92px;
+  width: 82px;
+  /*height: 16.2vh;
+  width: 25.63vw;*/
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 14px;
+  margin-left: 8px;
+  /*margin-top: 1.75vh;
   margin-right: 3.13vw;
   margin-bottom: 2.46vh;
-  margin-left: 2.5vw;
+  margin-left: 2.5vw;*/
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../images/filmclub.png');
@@ -73,13 +83,15 @@ ul{
 }
 li{
   background-color: #00A5BF;
-  height: 6.69vh;
-  width: 100vw;
+  height: 38px;
+  /*height: 6.69vh;*/
+  width: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
   color: #FFF;
-  line-height: 6.69vh;
+  line-height: 38px;
+  /*line-height: 6.69vh;*/
 }
 
 li>a{
@@ -108,6 +120,11 @@ li:nth-of-type(3){
   background-color: #00D5E7;
 }
 
+h2{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
 p{
   font-family: 'PT Sans', sans-serif;
   font-size: 11px;
@@ -300,4 +317,13 @@ footer>p{
     margin: 0;
     font-size: 18px;
     line-height: 70px;
+}
+
+@media (min-width: 545px) {
+
+}
+
+
+@media (min-width: 769px) {
+
 }
