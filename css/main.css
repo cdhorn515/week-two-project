@@ -1,12 +1,13 @@
-@font-face{ src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
-font-family: 'PT Sans', sans-serif;
+@font-face {
+  src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+  font-family: 'PT Sans', sans-serif;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   color: #0B1942;
   background-color: #FFF;
   margin: 0;
@@ -14,8 +15,8 @@ body{
   font-family: 'PT Sans', sans-serif;
   width: 100vw;
 }
-
-.navbar{
+/*------------navbar------------------*/
+.navbar {
   background-color: #7DDFE8;
   width: 100%;
   height: 114px;
@@ -26,7 +27,7 @@ body{
   justify-content: flex-start;
 }
 
-.logo-box{
+.logo-box {
   margin: 0;
   position: absolute;
   height: 114px;
@@ -34,7 +35,7 @@ body{
   background-color: #f5005B;
 }
 
-.logo{
+.logo {
   flex: 1 1 auto;
   position: absolute;
   background-color: #F5005B;
@@ -50,65 +51,75 @@ body{
   background-image: url('../images/filmclub.png');
 }
 
-ul{
+ul {
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
   margin: 0;
   padding: 0;
-  padding-left: 102px;
   text-decoration: none;
   flex: 1 1 73%;
 }
-li{
+
+li {
   background-color: #00A5BF;
   height: 38px;
   width: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-left: 102px;
+  /*padding-left: 102px;*/
   color: #FFF;
   line-height: 38px;
 }
 
-li>a{
+li>a {
   color: #FFF;
   text-decoration: none;
-  padding-left: 102px;
+  text-align: center;
+  /*padding-left: 102px;*/
 }
 
-footer li>a{
-  padding-left: 0;
-}
-
-ul:first-child, ul:nth-child(3){
+ul:first-child, ul:nth-child(3) {
   margin: 0;
 }
 
-li:nth-of-type(2){
-  background-color: #00B7D3;
+ul>li>a{
+  margin: 0;
 }
-li:nth-of-type(3){
+
+#home {
   background-color: #00D5E7;
 }
 
-h2{
+#calendar {
+  background-color: #00B7D3;
+}
+
+#join{
+  background-color: #00D5E7;
+
+}
+/*-------------body---------------------*/
+
+h2 {
   font-family: 'PT Sans', sans-serif;
   font-size: 20px;
   font-weight: lighter;
 }
-p{
+
+p {
   font-family: 'PT Sans', sans-serif;
   font-size: 11px;
   line-height: 1.9;
 }
-section{
+
+section {
   text-align: left;
   margin: 22px;
 }
 
-.hz-blue-heading{
+.hz-blue-heading {
   background-color: #0B1942;
   color: #FFF;
   height: 35px;
@@ -119,10 +130,12 @@ section{
   font-size: 18px;
   font-weight: lighter;
 }
-section:nth-child(3){
+
+section:nth-child(3) {
   margin: 0;
 }
-.big-blue-box{
+/*---------Blue container-----------------*/
+.big-blue-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,7 +148,7 @@ section:nth-child(3){
   font-size: 28px;
 }
 
-.big-blue-box>h2{
+.big-blue-box>h2 {
   margin-top: 3.2vh;
   margin-bottom: 0.5vh;
   margin-left: 5vh;
@@ -143,8 +156,8 @@ section:nth-child(3){
   font-weight: lighter;
   font-size: 36px;
 }
-
-.white-box{
+/*----------white box inside blue box------------*/
+.white-box {
   background-color: #E2E2E2;
   width: 91%;
   height: 51vh;
@@ -157,18 +170,20 @@ section:nth-child(3){
   justify-content: space-between;
   align-items: center;
 }
-
-.rashomon{
+/*---------Rashomon pic section-----------------*/
+.rashomon {
   z-index: 2;
   margin: 0;
   flex: 1 1 50%;
 }
 
-.rashomon>img{
-  height: 42vh;
-  width: 38vw;
+.rashomon>img {
+  /*height: 42vh;
+  width: 38vw;*/
+  height: 55vw;
+  width: 86%;
   margin: 0 3vw;
-  margin-bottom: 3.5vh;
+  margin-bottom: 4vw;
   /*height: 35vh;
   width: 37vw;*/
   padding: 0;
@@ -176,17 +191,26 @@ section:nth-child(3){
   margin-top: 0;
   margin-bottom: 7vw;*/
 }
-.film-info{
+
+.film-info {
   /*z-index: 2;*/
   /*color: #00B7D3;*/
   flex: 1 1 48%;
 }
 
-h3{
+.film-info>ul~#disc{
+  padding-left: 0;
+  flex-flow: column, nowrap;
+}
+.film-info li~#disc{
+  padding-left: 0;
+}
+
+h3 {
   margin: 0;
 }
 
-h3>a{
+h3>a {
   color: #00B7D3;
   margin: 0;
   font-family: 'PT Sans', sans-serif;
@@ -195,8 +219,7 @@ h3>a{
   line-height: 0;
 }
 
-
-.film-info>p{
+.film-info>p {
   font-family: 'PT Sans', sans-serif;
   font-weight: lighter;
   font-size: 14px;
@@ -206,30 +229,31 @@ h3>a{
   margin-bottom: 15px;
 }
 
-.hz-line{
+.hz-line {
   border-bottom: 1px solid #0B1942;
   margin-right: 25px;
 }
 
-.film-info>ul{
+.film-info>ul {
   height: 18vh;
 }
 
-hr{
-margin: 15px 0;
-margin-right: 20px;
-color: #0B1942;
+hr {
+  margin: 15px 0;
+  margin-right: 20px;
+  color: #0B1942;
 }
-.white-box>ul{
+
+.white-box>ul {
   width: 44vw;
 }
 
-#disc{
+#disc {
   list-style: circle;
   color: #0B1942;
   background-color: inherit;
   font-family: 'PT Sans', sans-serif;
-  margin-left: 25px;
+  margin-left: 10px;
   font-size: 14px;
   font-weight: lighter;
   /*height: 38px;*/
@@ -237,8 +261,8 @@ color: #0B1942;
   text-align: inherit;
   line-height: 0;
 }
-
-.upcoming-films{
+/*----------group of 4 posters----------------*/
+.upcoming-films {
   background-color: #E2E2E2;
   display: flex;
   flex-flow: row wrap;
@@ -250,22 +274,17 @@ color: #0B1942;
   width: 91vw;
 }
 
-.pic{
+.pic {
   flex: 1 1 48%;
 }
-.pic img{
-  /*flex-basis: 45%;*/
+
+.pic img {
   margin: 10px 10px;
   width: 90%;
-  /*width: 41vw;*/
   height: 42vh;
 }
 
-section:nth-of-type(3){
-  margin: 0;
-}
-
-figcaption>a{
+figcaption>a {
   color: #00B7D3;
   font-family: 'PT Sans', sans-serif;
   font-weight: lighter;
@@ -275,7 +294,7 @@ figcaption>a{
   /*margin-left: 10px;*/
 }
 
-figcaption{
+figcaption {
   color: ##0B1942;
   font-family: 'PT Sans', sans-serif;
   /*font-weight: lighter;*/
@@ -285,109 +304,149 @@ figcaption{
   line-height: 1.8px;
   padding: 8px 0;
 }
+/*------------footer-------------------*/
+footer li>a, footer ul>li, footer li {
+  padding-left: 0;
+}
 
-footer{
-  background-color: #7DDFE8;
+footer {
+  /*background-color: #7DDFE8;
   color: #FFF;
-  text-align: center;
-  height: 70px;
-  text-align: center;
+  /*text-align: center;*/
+  /*height: 114px;
+  width: 100%;*/
+  /*text-align: center;*/
+  /*margin: 0;
+  padding: 0;*/*/
+  /*display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;*/
 }
 
-footer>p{
-    margin: 0;
-    font-size: 18px;
-    line-height: 70px;
+footer>ul, footer>i{
+  padding-left: 0;
+  /*flex-basis: 100%;*/
+}
+.fa-copyright{
+  width: 100%;
+  height: 72px;
+  color: #FFF;
+  background-color: #7DDFE8;
+  text-align: center;
+  line-height: 72px;
 }
 
+/*------------------TABLET-----------------------*/
 @media (min-width: 545px) {
-  .involved{
+    /*-------3 par sections--------*/
+
+  .hz-blue {
+    flex-basis: 30%;
+  }
+  .hz-blue-heading {
+    font-size: 20px;
+  }
+
+  .involved {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    /*or space-around*/
     align-items: flex-start;
   }
 
-  .watch, .notes, .meetup{
+  .watch, .notes, .meetup {
     margin: 0 10px;
   }
 
-  .white-box{
+  p {
+    font-size: 18px;
+    line-height: 1.9;
+  }
+  /*-------white box for Rashomon------*/
+  .white-box {
     width: 91%;
     height: 67vh;
   }
-
-  .rashomon>img{
+  .rashomon>img {
     height: 58vh;
     width: 38vw;
     padding: 0;
     margin: 0 5vw;
   }
 
-  .upcoming-films{
+  /*-------4 posters----------*/
+  .upcoming-films {
     flex-flow: row nowrap;
     justify-content: space-around;
-}
-
-  .pic img{
+  }
+  .pic img {
     /*flex-basis: 45%;*/
     margin: 8px;
     flex: 1 1 20%;
     /*width: 46%;*/
     height: 21vh;
   }
-
-  ul{
+  ul {
     flex-flow: row nowrap;
   }
-  li{
-    height: 114px;
-    width: 102px;
-    padding-left: 0;
-  }
+/*---------------info column beside Rashomon pic*/
+h3{
+  margin-top: -70px;
+}
 
-  li>a{
-    padding-left: 0;
-    line-height: 114px;
-  }
+.film-info>ul{
+  flex-flow: column nowrap;
+  padding-left: 0;
+}
 
-.involved{
+#disc{
+  margin-left: 10px;
+}
+li {
+  height: 114px;
+  /*width: 102px;*/
+  padding-left: 0;
+}
+li>a {
+  padding-left: 0;
+  line-height: 114px;
+}
+/*-----footer-----------*/
+.footer-flex{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
-  .hz-blue{
-    flex-basis: 30%;
-  }
-
-  .hz-blue-heading{
-    font-size: 20px;
-  }
-  p{
-    font-size: 18px;
-    height: 28px;
-    line-height: 38px;
-  }
-  footer>ul{
+  footer>ul {
     padding-left: 0;
+    flex: 0 1 45%;
   }
 
-  footer{
-
+  footer {
     text-align: center;
     height: 114px;
   }
+  .copyright{
+    flex: 1 1 auto;
+    /*width: 100%;*/
+    height: 114px;
+    line-height: 114px;
+    text-align: right;
+    margin-left: auto;
 
-  footer>p{
-      margin: 0;
-      font-size: 18px;
-      line-height: 114px;
   }
 
+  ul.footer{
+    flex: 0 1 45%;
+  }
+  footer>p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 114px;
+  }
 }
 
-@media (min-width: 769px) {
-
-}
+@media (min-width: 769px) {}
