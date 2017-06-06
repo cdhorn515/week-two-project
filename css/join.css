@@ -184,6 +184,18 @@ footer>p{
   .lower-pg ul{
     padding-left: 0;
   }
+  
+  footer{
+
+    text-align: center;
+    height: 114pxpx;
+  }
+
+  footer>p{
+      margin: 0;
+      font-size: 18px;
+      line-height: 114px;
+  }
 
 
 }

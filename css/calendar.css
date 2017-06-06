@@ -18,9 +18,9 @@ body{
 }
 
 .navbar{
-  /*height: 114px;*/
+  height: 114px;
   background-color: #7DDFE8;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -29,27 +29,24 @@ body{
 }
 
 .logo-box{
-  /*display: flex;*/
-  /*flex-flow: row nowrap;*/
-  /*justify-content: center;*/
   position: absolute;
   margin: 0;
-  height: 20.08vh;
-  width: 31.88vw;
+  height: 114px;
+  width: 102px;
   background-color: #f5005B;
 }
 
 .logo{
-  /*flex: 1 1 30%;*/
+  flex: 1 1 auto;
   position: absolute;
   background-color: #F5005B;
   background-position: top;
-  height: 16.2vh;
-  width: 25.63vw;
-  margin-top: 1.75vh;
-  margin-right: 3.13vw;
-  margin-bottom: 2.46vh;
-  margin-left: 2.5vw;
+  height: 92px;
+  width: 82px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 14px;
+  margin-left: 8px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../images/filmclub.png');
@@ -61,42 +58,30 @@ ul{
   flex-flow: column nowrap;
   margin: 0;
   padding: 0;
+  padding-left: 102px;
   text-decoration: none;
   flex: 1 1 73%;
 }
 
-/*ul:first-of-type, ul:nth-of-type(3){
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  margin: auto;
-  padding: 0;
-  text-decoration: none;
-}*/
-
 li{
   background-color: #00A5BF;
-  height: 6.69vh;
-  width: 100vw;
-  text-align: center;
+  height: 38px;
+  width: 100%;
   margin: 0;
   padding: 0;
+  padding-left: 102px;
   color: #FFF;
-  line-height: 6.69vh;
+  line-height: 38px;
 }
 
 li>a{
   color: #FFF;
   text-decoration: none;
-  /*margin: auto;*/
-  /*line-height: 38px;*/
-  /*text-align: center;*/
-  padding-left: 25.63vw;
+  padding-left: 102px;
 }
-.lower-pg li>a{
+footer li>a{
   padding-left: 0;
-  /*width: 100vw;*/
-  /*margin: 0;*/
+
 }
 
 ul:first-child, ul:nth-child(3){
@@ -143,12 +128,12 @@ margin: 1px;
 }
 
 .day{
-  height: 8.27vh;
+  height: 47px;
   /*width: auto;*/
   background-color: #FFF;
   margin: 1px;
-  flex-basis: 13.65%;
-  /*flex: 1 1 13%;*/
+  /*flex-basis: 13.65%;*/
+  flex: 0 0 13.65%;
 }
 
 .num{
@@ -185,7 +170,39 @@ footer>p{
 }
 
 @media (min-width: 545px) {
+  ul{
+    flex-flow: row nowrap;
+  }
+  li{
+    height: 114px;
+    width: 102px;
+    padding-left: 0;
+  }
 
+  li>a{
+    padding-left: 0;
+    line-height: 114px;
+  }
+
+  .lower-pg ul{
+    padding-left: 0;
+  }
+
+footer>ul{
+  padding-left: 0;
+}
+
+  footer{
+
+    text-align: center;
+    height: 114px;
+  }
+
+  footer>p{
+      margin: 0;
+      font-size: 18px;
+      line-height: 114px;
+  }
 }
 
 @media (min-width: 769px) {
