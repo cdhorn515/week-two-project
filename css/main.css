@@ -1,7 +1,11 @@
+
+
 @font-face {
   src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
   font-family: 'PT Sans', sans-serif;
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -81,7 +85,7 @@ ul[class="header"]>li>a {
 
 
 #home {
-  background-color: #00D5E7;
+  background-color: #00A5BF;
 }
 
 #calendar {
@@ -305,17 +309,16 @@ figcaption {
 }
 /*------------footer-------------------*/
 
-ul.footer {
+.footer {
   list-style: none;
-  /*display: flex;
-  flex-flow: column nowrap;*/
+  /*display: flex;*/
+  /*flex-flow: column nowrap;*/
+  width: 100%;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  /*flex: 1 1 73%;*/
 }
-
-ul[class="footer"]>li {
+.footer>li {
   background-color: #00A5BF;
   height: 38px;
   width: 100%;
@@ -327,20 +330,22 @@ ul[class="footer"]>li {
   line-height: 38px;
 }
 
-ul[class="footer"]>li>a {
+.footer a {
   color: #FFF;
   text-decoration: none;
   text-align: center;
   /*padding-left: 102px;*/
 }
-footer li>a, footer ul>li, footer li {
-  padding-left: 0;
+
+.copyright{
+  width: 100%;
+  height: 72px;
+  color: #FFF;
+  background-color: #7DDFE8;
+  text-align: center;
+  line-height: 72px;
 }
 
-footer>ul, footer>i{
-  padding-left: 0;
-  /*flex-basis: 100%;*/
-}
 .fa-copyright{
   width: 100%;
   height: 72px;
@@ -350,9 +355,11 @@ footer>ul, footer>i{
   line-height: 72px;
 }
 
+
 /*------------------TABLET-----------------------*/
+
+
 @media (min-width: 545px) {
-    /*-------3 par sections--------*/
 
     ul[class="header"] {
       flex-flow: row nowrap;
@@ -452,25 +459,6 @@ li>a {
 /*-----footer-----------*/
 
 
-
-
-}
-.copyright{
-  /*width: 100%;
-  height: 72px;
-  color: #FFF;
-  background-color: #7DDFE8;
-  text-align: center;
-  line-height: 72px;*/
-}
-.fa-copyright{
-  height: 114px;
-  text-align: right;
-  line-height: 114px;
-}
-
-
-/*------------footer already here*/
 .footer-flex{
   display: flex;
   flex-flow: row nowrap;
@@ -492,28 +480,32 @@ li>a {
     line-height: 114px;
   }
   footer {
-    text-align: center;
-    height: 114px;
+    /*text-align: center;
+    height: 114px;*/
   }
+
   .copyright{
     flex: 1 1 auto;
     height: 114px;
     line-height: 114px;
     text-align: right;
     margin-left: auto;
-
   }
+
 .fa-copyright{
   height: 114px;
   text-align: right;
   line-height: 114px;
+  padding-right: 15px;
 }
 
   footer>p {
-    margin: 0;
+    /*margin: 0;
     font-size: 18px;
-    line-height: 114px;
+    line-height: 114px;*/
   }
 }
 
-@media (min-width: 769px) {}
+@media (min-width: 769px) {
+
+}
