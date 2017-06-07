@@ -16,7 +16,7 @@ body{
   font-family: 'PT Sans', sans-serif;
   width: 100vw;
 }
-
+/*--------header--------*/
 .navbar{
   height: 114px;
   background-color: #7DDFE8;
@@ -51,22 +51,23 @@ body{
   background-repeat: no-repeat;
   background-image: url('../images/filmclub.png');
 }
-
-ul{
+/*-----navigation------------*/
+ul.header{
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
   margin: 0;
   padding: 0;
-  padding-left: 102px;
+  /*padding-left: 102px;*/
   text-decoration: none;
   flex: 1 1 73%;
 }
 
-li{
+ul.header>li{
   background-color: #00A5BF;
   height: 38px;
   width: 100%;
+  text-align: center;
   margin: 0;
   padding: 0;
   padding-left: 102px;
@@ -74,25 +75,37 @@ li{
   line-height: 38px;
 }
 
-li>a{
+ul.header>li>a{
   color: #FFF;
   text-decoration: none;
-  padding-left: 102px;
+  text-align: center;
+  /*padding-left: 102px;*/
 }
 footer li>a{
-  padding-left: 0;
+  /*padding-left: 0;*/
 
+}
+#home {
+  background-color: #00D5E7;
+}
+
+#calendar {
+  background-color: #00B7D3;
+}
+
+#join{
+  background-color: #00D5E7;
 }
 
 ul:first-child, ul:nth-child(3){
-  margin: 0;
+  /*margin: 0;*/
 }
 
 li:nth-of-type(2){
-  background-color: #00B7D3;
+  /*background-color: #00B7D3;*/
 }
 li:nth-of-type(3){
-  background-color: #00D5E7;
+  /*background-color: #00D5E7;*/
 }
 
 
