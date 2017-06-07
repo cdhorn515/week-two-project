@@ -14,9 +14,8 @@ body{
   font-family: 'PT Sans', sans-serif;
   width: 100vw;
 }
-
+/*----------header--------*/
 .navbar{
-  /*position: absolute;*/
   background-color: #7DDFE8;
   width: 100%;
   height: 114px;
@@ -28,9 +27,22 @@ body{
 }
 
 .logo-box{
-  /*display: flex;*/
-  /*flex-flow: row nowrap;*/
-  /*justify-content: center;*/
+  height: 114px;
+  background-color: #7DDFE8;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+
+  /*margin: 0;
+  height: 114px;
+  width: 102px;
+  background-color: #f5005B;*/
+}
+
+.logo-box{
   position: absolute;
   margin: 0;
   height: 114px;
@@ -53,23 +65,23 @@ body{
   background-repeat: no-repeat;
   background-image: url('../images/filmclub.png');
 }
+/*--------navigation-----------*/
 
-ul{
+ul[class="header"]{
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
   margin: 0;
   padding: 0;
-  padding-left: 102px;
   text-decoration: none;
   flex: 1 1 73%;
 }
 
-li{
+ul[class="header"]>li{
 background-color: #00A5BF;
   height: 38px;
   width: 100%;
-  /*text-align: center;*/
+  text-align: center;
   margin: 0;
   padding: 0;
   padding-left: 102px;
@@ -77,36 +89,23 @@ background-color: #00A5BF;
   line-height: 38px;
 }
 
-li>a{
+ul[class="header"]>li>a{
   color: #FFF;
-  /*height: 38px;*/
-  /*width: 100%;*/
   text-decoration: none;
-  /*margin: 0 auto;*/
-  /*line-height: 38px;*/
-  /*text-align: center;*/
-  padding-left: 102px;
-}
-.lower-pg li>a{
-  padding-left: 0;
-  /*width: 100vw;*/
-  /*margin: 0;*/
+  text-align: center;
 }
 
-ul:first-child, ul:nth-child(3){
-  margin: 0;
+#home{
+  background-color: #00A5BF;
 }
-
-li:nth-of-type(2){
+#calendar{
   background-color: #00B7D3;
 }
-li:nth-of-type(3){
+#join{
   background-color: #00D5E7;
 }
 
-section:last-of-type{
- margin: 0;
-}
+/*------------body-------------------*/
 
 h2{
   font-family: 'PT Sans', sans-serif;
@@ -152,53 +151,119 @@ img{
   border-style: none;
 }
 
-footer{
-  background-color: #7DDFE8;
-  color: #FFF;
+/*------------footer---------------*/
+.footer {
+  list-style: none;
+  /*display: flex;*/
+  /*flex-flow: column nowrap;*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.footer>li {
+  background-color: #00A5BF;
+  height: 38px;
+  width: 100%;
   text-align: center;
-  height: 70px;
+  margin: 0;
+  padding: 0;
+  /*padding-left: 102px;*/
+  color: #FFF;
+  line-height: 38px;
 }
 
-footer>p{
-    margin: 0;
-    font-size: 18px;
-    line-height: 70px;
+.footer a {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  /*padding-left: 102px;*/
+}
+
+.copyright{
+  width: 100%;
+  height: 72px;
+  color: #FFF;
+  background-color: #7DDFE8;
+  text-align: center;
+  line-height: 72px;
+}
+
+.fa-copyright{
+  width: 100%;
+  height: 72px;
+  color: #FFF;
+  background-color: #7DDFE8;
+  text-align: center;
+  line-height: 72px;
 }
 
 @media (min-width: 545px){
 
-  ul{
+  ul[class="header"] {
     flex-flow: row nowrap;
-  }
-  li{
-    height: 114px;
-    width: 102px;
-    padding-left: 0;
+    flex: 0 1 60%;
+    margin-left: 102px;
   }
 
-  li>a{
+  ul[class="header"]>li {
+    height: 114px;
+    width: 22%;
+    /*width: 100%;*/
     padding-left: 0;
+    margin-left: 0;
     line-height: 114px;
   }
-
-  .lower-pg ul{
-    padding-left: 0;
-  }
-  
-  footer{
-
-    text-align: center;
-    height: 114pxpx;
+  ul[class="header"]:first-child{
+    margin-left: 102px;
   }
 
-  footer>p{
-      margin: 0;
-      font-size: 18px;
-      line-height: 114px;
+  ul[class="header"]>li>a {
+    /*text-align: center;*/
+    margin-left: 0;
   }
 
-
+/*-----------footer--------------*/
+.footer-flex{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
+  ul.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+    flex: 0 1 45%;
+  }
+  ul.footer>li {
+    height: 114px;
+    text-align: center;
+    line-height: 114px;
+  }
+  footer {
+    /*text-align: center;
+    height: 114px;*/
+  }
+
+  .copyright{
+    flex: 1 1 auto;
+    height: 114px;
+    line-height: 114px;
+    text-align: right;
+    margin-left: auto;
+  }
+
+.fa-copyright{
+  height: 114px;
+  text-align: right;
+  line-height: 114px;
+  padding-right: 15px;
+}
+
 
 @media (min-width: 769px) {
 
