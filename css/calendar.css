@@ -52,18 +52,17 @@ body{
   background-image: url('../images/filmclub.png');
 }
 /*-----navigation------------*/
-ul.header{
+ul[class="header"]{
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
   margin: 0;
   padding: 0;
-  /*padding-left: 102px;*/
   text-decoration: none;
   flex: 1 1 73%;
 }
 
-ul.header>li{
+ul[class="header"]>li{
   background-color: #00A5BF;
   height: 38px;
   width: 100%;
@@ -75,16 +74,13 @@ ul.header>li{
   line-height: 38px;
 }
 
-ul.header>li>a{
+ul[class="header"]>li>a{
   color: #FFF;
   text-decoration: none;
   text-align: center;
   /*padding-left: 102px;*/
 }
-footer li>a{
-  /*padding-left: 0;*/
 
-}
 #home {
   background-color: #00A5BF;
 }
@@ -97,17 +93,7 @@ footer li>a{
   background-color: #00D5E7;
 }
 
-ul:first-child, ul:nth-child(3){
-  /*margin: 0;*/
-}
-
-li:nth-of-type(2){
-  /*background-color: #00B7D3;*/
-}
-li:nth-of-type(3){
-  /*background-color: #00D5E7;*/
-}
-
+/*-------body------*/
 
 h1, h3{
   font-family: 'PT Sans', sans-serif;
@@ -121,7 +107,7 @@ h1, h3{
 .month{
   background-color: #0B1942;
   width: 100vw;
-  /*padding-bottom: 5.63vh;*/
+
 }
 
 .month>h3{
@@ -139,10 +125,9 @@ margin: 1px;
   border: 0.3125vw solid #0B1942;
   padding-bottom: 5.63vh;
 }
-
+/* FIXME: try turning grow or shrink on */
 .day{
   height: 47px;
-  /*width: auto;*/
   background-color: #FFF;
   margin: 1px;
   /*flex-basis: 13.65%;*/
@@ -168,22 +153,124 @@ margin: 1px;
 .highlight{
   background-color: #F5005B;
 }
-
-footer{
-  background-color: #7DDFE8;
-  color: #FFF;
+/*---footer-----*/
+.footer {
+  list-style: none;
+  /*display: flex;*/
+  /*flex-flow: column nowrap;*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.footer>li {
+  background-color: #00A5BF;
+  height: 38px;
+  width: 100%;
   text-align: center;
-  height: 70px;
+  margin: 0;
+  padding: 0;
+  /*padding-left: 102px;*/
+  color: #FFF;
+  line-height: 38px;
 }
 
-footer>p{
-    margin: 0;
-    font-size: 18px;
-    line-height: 70px;
+.footer a {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  /*padding-left: 102px;*/
 }
+
+.copyright{
+  width: 100%;
+  height: 72px;
+  color: #FFF;
+  background-color: #7DDFE8;
+  text-align: center;
+  line-height: 72px;
+}
+
+.fa-copyright{
+  width: 100%;
+  height: 72px;
+  color: #FFF;
+  background-color: #7DDFE8;
+  text-align: center;
+  line-height: 72px;
+}
+
 
 @media (min-width: 545px) {
-  ul{
+
+  ul[class="header"] {
+    flex-flow: row nowrap;
+    flex: 0 1 60%;
+    margin-left: 102px;
+  }
+
+  ul[class="header"]>li {
+    height: 114px;
+    width: 22%;
+    /*width: 100%;*/
+    padding-left: 0;
+    margin-left: 0;
+    line-height: 114px;
+  }
+  ul[class="header"]:first-child{
+    margin-left: 102px;
+  }
+
+  ul[class="header"]>li>a {
+    /*text-align: center;*/
+    margin-left: 0;
+  }
+
+/*----footer------*/
+
+.footer-flex{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+  ul.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+    flex: 0 1 45%;
+  }
+  ul.footer>li {
+    height: 114px;
+    text-align: center;
+    line-height: 114px;
+  }
+  footer {
+    /*text-align: center;
+    height: 114px;*/
+  }
+
+  .copyright{
+    flex: 1 1 auto;
+    height: 114px;
+    line-height: 114px;
+    text-align: right;
+    margin-left: auto;
+  }
+
+.fa-copyright{
+  height: 114px;
+  text-align: right;
+  line-height: 114px;
+  padding-right: 15px;
+}
+
+
+
+  /*ul{
     flex-flow: row nowrap;
   }
   li{
@@ -216,7 +303,7 @@ footer>ul{
       font-size: 18px;
       line-height: 114px;
   }
-}
+}*/
 
 @media (min-width: 769px) {
 
