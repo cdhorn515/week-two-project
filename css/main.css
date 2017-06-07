@@ -50,8 +50,7 @@ body {
   background-repeat: no-repeat;
   background-image: url('../images/filmclub.png');
 }
-
-ul {
+ul[class="header"] {
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
@@ -61,32 +60,25 @@ ul {
   flex: 1 1 73%;
 }
 
-li {
+ul[class="header"]>li {
   background-color: #00A5BF;
   height: 38px;
   width: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
-  /*padding-left: 102px;*/
+  padding-left: 102px;
   color: #FFF;
   line-height: 38px;
 }
 
-li>a {
+ul[class="header"]>li>a {
   color: #FFF;
   text-decoration: none;
   text-align: center;
   /*padding-left: 102px;*/
 }
 
-ul:first-child, ul:nth-child(3) {
-  margin: 0;
-}
-
-ul>li>a{
-  margin: 0;
-}
 
 #home {
   background-color: #00D5E7;
@@ -191,6 +183,13 @@ section:nth-child(3) {
   margin-top: 0;
   margin-bottom: 7vw;*/
 }
+ul #disc{
+  height: 5vw;
+}
+
+/*li #disc{
+  /*padding-left: 15px;
+  }*/
 
 .film-info {
   /*z-index: 2;*/
@@ -253,7 +252,7 @@ hr {
   color: #0B1942;
   background-color: inherit;
   font-family: 'PT Sans', sans-serif;
-  margin-left: 10px;
+  margin-left: -11px;
   font-size: 14px;
   font-weight: lighter;
   /*height: 38px;*/
@@ -305,22 +304,37 @@ figcaption {
   padding: 8px 0;
 }
 /*------------footer-------------------*/
-footer li>a, footer ul>li, footer li {
-  padding-left: 0;
+
+ul.footer {
+  list-style: none;
+  /*display: flex;
+  flex-flow: column nowrap;*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /*flex: 1 1 73%;*/
 }
 
-footer {
-  /*background-color: #7DDFE8;
+ul[class="footer"]>li {
+  background-color: #00A5BF;
+  height: 38px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /*padding-left: 102px;*/
   color: #FFF;
-  /*text-align: center;*/
-  /*height: 114px;
-  width: 100%;*/
-  /*text-align: center;*/
-  /*margin: 0;
-  padding: 0;*/*/
-  /*display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;*/
+  line-height: 38px;
+}
+
+ul[class="footer"]>li>a {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  /*padding-left: 102px;*/
+}
+footer li>a, footer ul>li, footer li {
+  padding-left: 0;
 }
 
 footer>ul, footer>i{
@@ -339,6 +353,29 @@ footer>ul, footer>i{
 /*------------------TABLET-----------------------*/
 @media (min-width: 545px) {
     /*-------3 par sections--------*/
+
+    ul[class="header"] {
+      flex-flow: row nowrap;
+      flex: 0 1 60%;
+      margin-left: 102px;
+    }
+
+    ul[class="header"]>li {
+      height: 114px;
+      width: 22%;
+      /*width: 100%;*/
+      padding-left: 0;
+      margin-left: 0;
+      line-height: 114px;
+    }
+    ul[class="header"]:first-child{
+      margin-left: 102px;
+    }
+
+    ul[class="header"]>li>a {
+      /*text-align: center;*/
+      margin-left: 0;
+    }
 
   .hz-blue {
     flex-basis: 30%;
@@ -413,6 +450,27 @@ li>a {
   line-height: 114px;
 }
 /*-----footer-----------*/
+
+
+
+
+}
+.copyright{
+  /*width: 100%;
+  height: 72px;
+  color: #FFF;
+  background-color: #7DDFE8;
+  text-align: center;
+  line-height: 72px;*/
+}
+.fa-copyright{
+  height: 114px;
+  text-align: right;
+  line-height: 114px;
+}
+
+
+/*------------footer already here*/
 .footer-flex{
   display: flex;
   flex-flow: row nowrap;
@@ -420,28 +478,37 @@ li>a {
   align-items: flex-start;
 }
 
-  footer>ul {
+  ul.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-left: 0;
     flex: 0 1 45%;
   }
-
+  ul.footer>li {
+    height: 114px;
+    text-align: center;
+    line-height: 114px;
+  }
   footer {
     text-align: center;
     height: 114px;
   }
   .copyright{
     flex: 1 1 auto;
-    /*width: 100%;*/
     height: 114px;
     line-height: 114px;
     text-align: right;
     margin-left: auto;
 
   }
+.fa-copyright{
+  height: 114px;
+  text-align: right;
+  line-height: 114px;
+}
 
-  ul.footer{
-    flex: 0 1 45%;
-  }
   footer>p {
     margin: 0;
     font-size: 18px;
