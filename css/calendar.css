@@ -107,7 +107,6 @@ h1, h3{
 .month{
   background-color: #0B1942;
   width: 100vw;
-
 }
 
 .month>h3{
@@ -121,29 +120,29 @@ margin: 1px;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  /*height: 256px;*/
-  border: 0.3125vw solid #0B1942;
+  height: 54%;
+  border: 1px solid #0B1942;
   padding-bottom: 5.63vh;
 }
-/* FIXME: try turning grow or shrink on */
 .day{
   height: 47px;
   background-color: #FFF;
   margin: 1px;
-  /*flex-basis: 13.65%;*/
-  flex: 0 0 13.65%;
+  flex-basis: 13.65%;
 }
 
 .num{
-  height: 4.577vh;
-  width: 8.125vw;
+  height: 53%;
+  width: 53%;
   margin: 0;
   padding: 0;
   background-color: #0B1942;
   color: #FFF;
+  font-family: 'PT Sans', sans-serif;
   font-weight: bolder;
   text-align: center;
-  line-height: 4.577vh;
+  font-size: 16px;
+  /*line-height: 52%;*/
 }
 
 .day-block>.last-row{
@@ -225,7 +224,21 @@ margin: 1px;
     /*text-align: center;*/
     margin-left: 0;
   }
+/*--------Calendar----------*/
 
+.day{
+  /*flex-basis: 14%;*/
+  height: 13vw;
+
+}
+
+.num{
+  height: 32%;
+  width: 32%;
+  font-size: 11px;
+  padding-top: 11px;
+
+}
 /*----footer------*/
 
 .footer-flex{
@@ -268,42 +281,6 @@ margin: 1px;
   padding-right: 15px;
 }
 
-
-
-  /*ul{
-    flex-flow: row nowrap;
-  }
-  li{
-    height: 114px;
-    width: 102px;
-    padding-left: 0;
-  }
-
-  li>a{
-    padding-left: 0;
-    line-height: 114px;
-  }
-
-  .lower-pg ul{
-    padding-left: 0;
-  }
-
-footer>ul{
-  padding-left: 0;
-}
-
-  footer{
-
-    text-align: center;
-    height: 114px;
-  }
-
-  footer>p{
-      margin: 0;
-      font-size: 18px;
-      line-height: 114px;
-  }
-}*/
 
 @media (min-width: 769px) {
 
