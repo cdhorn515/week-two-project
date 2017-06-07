@@ -35,11 +35,6 @@ body{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-
-  /*margin: 0;
-  height: 114px;
-  width: 102px;
-  background-color: #f5005B;*/
 }
 
 .logo-box{
@@ -126,6 +121,10 @@ legend{
 
 label, p{
   margin-top: 20px;
+}
+
+.userpic{
+  text-align: center;
 }
 
 img{
