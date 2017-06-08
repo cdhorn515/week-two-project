@@ -3,6 +3,8 @@ font-family: 'PT Sans', sans-serif;
 }
 
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -125,6 +127,9 @@ label, p{
 
 .userpic{
   text-align: center;
+  margin: 0;
+  padding: 0;
+
 }
 
 img{
@@ -221,6 +226,46 @@ img{
     /*text-align: center;*/
     margin-left: 0;
   }
+/*------------form section-------------*/
+.profile-pic{
+  width: 50%;
+  float: left;
+}
+
+.form-group{
+  margin-bottom: 0;
+}
+
+.text-boxes{
+  /*clear: left;*/
+  width: 50%;
+}
+.userpic{
+  text-align: left;
+  width: 88%;
+}
+
+#name, #email, #password1, #password2{
+  width: 48vw;
+}
+
+.password-flex{
+  margin-top: 50px;
+}
+.bottom-pg-flex{
+  clear: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+legend{
+  font-size: 16px;
+}
+.checkbox{
+  flex: 0 0 50%;
+}
 
 /*-----------footer--------------*/
 .footer-flex{
@@ -242,10 +287,6 @@ img{
     height: 114px;
     text-align: center;
     line-height: 114px;
-  }
-  footer {
-    /*text-align: center;
-    height: 114px;*/
   }
 
   .copyright{

@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--font awesome link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Google font import-->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    <!--bootstrap link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--links to my css-->
-    <!-- <link rel="stylesheet" href="../css/main.css"> -->
-    <link rel="stylesheet" href="../css/join.css">
-    <title>Film Club - Join</title>
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo-box">
-        <div class="logo">
-        </div>
-      </div>
-        <ul class="header">
-          <li id="home"><a href="../index.html">Home</a></li>
-          <li id="calendar"><a href="../calendar/index.html">Calendar</a></li>
-          <li id="join"><a href="index.html">Join</a></li>
-        </ul>
 
-      </header>
-      <h2>Join Film Club</h2>
-    <!-- <section> -->
-     <form class="form" action="index.html" method="post">
-      <fieldset>
-      <div class="form-group">
-        <label for="exampleInputFile">profile picture</label>
-        <input type="file" id="exampleInputFile">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--font awesome link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Google font import-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <!--bootstrap link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--links to my css-->
+  <!-- <link rel="stylesheet" href="../css/main.css"> -->
+  <link rel="stylesheet" href="../css/join.css">
+  <title>Film Club - Join</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo-box">
+      <div class="logo">
       </div>
-      <div class="userpic">
-        <img src="../images/profile-placeholder.png" alt="">
-        <!-- <img src="../images/profile-placeholder.png" alt="shadow profile image"> -->
+    </div>
+    <ul class="header">
+      <li id="home"><a href="../index.html">Home</a></li>
+      <li id="calendar"><a href="../calendar/index.html">Calendar</a></li>
+      <li id="join"><a href="index.html">Join</a></li>
+    </ul>
+
+  </header>
+  <h2>Join Film Club</h2>
+  <!-- <section> -->
+  <form class="form" action="index.html" method="post">
+    <div class="profile-pic">
+
+      <!-- <fieldset class="top-pg"> -->
+      <div class="top-pg-flex">
+        <div class="form-group">
+          <label for="exampleInputFile">profile picture</label>
+          <input type="file" id="exampleInputFile">
+        </div>
+        <!-- <div class="userpic"> -->
+        <img class="userpic" src="../images/profile-placeholder.png" alt="shadow profile image">
       </div>
-      </fieldset>
-      <fieldset>
+    </div>
+  <!-- </fieldset> -->
+  <div class="text-boxes">
+    <fieldset>
       <div class="form-group">
         <label for="name">name</label>
         <input type="text" class="form-control" id="name" placeholder="">
@@ -50,7 +56,7 @@
         <input type="email" class="form-control" id="email" placeholder="">
       </div>
     </fieldset>
-    <fieldset>
+    <fieldset class="password-flex">
       <div class="form-group">
         <label for="password1">password</label>
         <input type="password" class="form-control" id="password1" placeholder="">
@@ -59,94 +65,90 @@
         <label for="password2">confirm password</label>
         <input type="password" class="form-control" id="password2" placeholder="">
       </div>
-    </fieldset>
-    <fieldset>
-      <legend>Which genres are you interested in?</legend>
+  </div>
+  <!-- </div> -->
+  </fieldset>
+  <fieldset>
+    <legend>Which genres are you interested in?</legend>
+    <div class="bottom-pg-flex">
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">action
        </label>
       </div>
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">adventure
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">comedy
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">drama
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">fantasy
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">historical
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">horror
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">mystery
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">romance
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">science fiction
        </label>
       </div>
-
       <div class="checkbox">
-       <label>
+        <label>
         <input type="checkbox">western
        </label>
       </div>
-    </fieldset>
-    <fieldset>
-      <p>Additional input</p>
-      <textarea class="form-control" rows="2"></textarea>
-     <div class="join-btn">
+    </div>
+  </fieldset>
+  <fieldset>
+    <p>Additional input</p>
+    <textarea class="form-control" rows="2"></textarea>
+    <div class="join-btn">
       <button type="button" id="submit" name="button">Join Film Club</button>
-     </div>
-    </fieldset>
-   </form>
+    </div>
+  </fieldset>
+  </form>
 
-      <footer>
-     <div class="footer-flex">
+  <footer>
+    <div class="footer-flex">
       <ul class="footer">
         <li id="home"><a href="../home.html">Home</a></li>
         <li id="calendar"><a href="../calendar/index.html">Calendar</a></li>
         <li id="join"><a href="index.html">Join</a></li>
       </ul>
 
-  <div class="copyright">
-      <i class="fa fa-copyright" aria-hidden="true">2017, Film Club</i></div>
+      <div class="copyright">
+        <i class="fa fa-copyright" aria-hidden="true">2017, Film Club</i></div>
     </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
