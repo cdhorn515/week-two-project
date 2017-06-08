@@ -489,7 +489,7 @@ h6{
     margin-left: 9px;
     padding-top: 7px;
   }
-}
+
 /*-----footer-----------*/
 
 
@@ -536,5 +536,72 @@ h6{
 }
 
 @media (min-width: 769px) {
+
+  ul[class="header"] {
+    flex: 0 1 35%;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+
+  .movie-container{
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 45%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .white-box {
+    width: 31%;
+    height: auto;
+    flex: 0 1 58%;
+  }
+  .upcoming-films{
+    flex: 0 1 58%;
+  }
+
+  .rashomon>img {
+    width: 95%;
+    margin: 11px;
+  }
+
+  .rashomon{
+    flex: 1 0 33%;
+  }
+  h3{
+  margin-top: 0;
+  }
+
+ul #disc{
+  height: 2vw;
+  width: 28vw;
+}
+
+#disc{
+  width: 26vw;
+}
+
+.film-info{
+  margin-top: -56px;
+  margin-left: 30px;
+}
+
+.film-info>p{
+  margin-bottom: 14px;
+}
+  .white-box{
+    margin: 15px;
+    margin-top: 0;
+    width: 0;
+    height: 26vw;
+  }
+.upcoming-films{
+  flex-flow: row wrap;
+  width: 95vw;
+  margin: 0;
+  height: 74vw;
+  margin-bottom: 20px;
+}
 
 }
