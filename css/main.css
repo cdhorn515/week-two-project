@@ -287,8 +287,12 @@ hr {
   width: 90%;
   height: 42vh;
 }
-
-figcaption>a {
+h6{
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+h6>a{
   color: #00B7D3;
   font-family: 'PT Sans', sans-serif;
   font-weight: lighter;
@@ -299,7 +303,7 @@ figcaption>a {
 }
 
 figcaption {
-  color: ##0B1942;
+  color: #0B1942;
   font-family: 'PT Sans', sans-serif;
   /*font-weight: lighter;*/
   font-size: 11px;
@@ -443,7 +447,7 @@ figcaption {
   }
 /*---------------info column beside Rashomon pic*/
 h3{
-  margin-top: -70px;
+  margin-top: -29.75vw;
 }
 
 .film-info>ul{
@@ -453,7 +457,7 @@ h3{
 
 #disc{
   margin-left: 10px;
-  height: 4vw;
+  height: 2.5vw;
 }
 li {
   height: 114px;
@@ -463,8 +467,25 @@ li {
 li>a {
   padding-left: 0;
   line-height: 114px;
+}
 
-figcaption{
+.film-info>p{
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+h6{
+  margin: 0;
+  margin-left: 9px;
+  margin-top: -9px;
+  width: 54%;
+}
+/*figcaption, h6{
+  margin-left: 9px;
+  width: 47%;
+  }*/
+
+  .film-club{
     margin-left: 9px;
     padding-top: 7px;
   }
