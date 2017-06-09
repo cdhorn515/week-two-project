@@ -1,14 +1,15 @@
-@font-face{ src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
-font-family: 'PT Sans', sans-serif;
+  @font-face {
+  src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+  font-family: 'PT Sans', sans-serif;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   color: #0B1942;
   background-color: #FFF;
   margin: 0;
@@ -16,11 +17,14 @@ body{
   font-family: 'PT Sans', sans-serif;
   width: 100vw;
 }
+
+
 /*----------header--------*/
-.navbar{
+
+.navbar {
   background-color: #7DDFE8;
   width: 100%;
-  height: 114px;
+  height: 115px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -28,7 +32,7 @@ body{
   justify-content: flex-start;
 }
 
-.logo-box{
+.logo-box {
   height: 114px;
   background-color: #7DDFE8;
   width: 100%;
@@ -39,7 +43,7 @@ body{
   justify-content: flex-start;
 }
 
-.logo-box{
+.logo-box {
   position: absolute;
   margin: 0;
   height: 114px;
@@ -47,7 +51,7 @@ body{
   background-color: #f5005B;
 }
 
-.logo{
+.logo {
   flex: 1 1 auto;
   position: absolute;
   background-color: #F5005B;
@@ -62,9 +66,11 @@ body{
   background-repeat: no-repeat;
   background-image: url('../images/filmclub.png');
 }
+
+
 /*--------navigation-----------*/
 
-ul[class="header"]{
+ul[class="header"] {
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
@@ -74,8 +80,8 @@ ul[class="header"]{
   flex: 1 1 73%;
 }
 
-ul[class="header"]>li{
-background-color: #00A5BF;
+ul[class="header"]>li {
+  background-color: #00A5BF;
   height: 38px;
   width: 100%;
   text-align: center;
@@ -86,53 +92,55 @@ background-color: #00A5BF;
   line-height: 38px;
 }
 
-ul[class="header"]>li>a{
+ul[class="header"]>li>a {
   color: #FFF;
   text-decoration: none;
   text-align: center;
 }
 
-#home{
+#home {
   background-color: #00A5BF;
 }
-#calendar{
+
+#calendar {
   background-color: #00B7D3;
 }
-#join{
+
+#join {
   background-color: #00D5E7;
 }
 
+
 /*------------body-------------------*/
 
-h2{
+h2 {
   font-family: 'PT Sans', sans-serif;
   font-weight: lighter;
   margin-bottom: 20px;
 }
 
-h2, form{
+h2, form {
   margin-left: 16px;
   margin-right: 16px;
 }
 
-legend{
+legend {
   padding-top: 23px;
   border-style: none;
   margin-bottom: 14px;
 }
 
-label, p{
+label, p {
   margin-top: 20px;
 }
 
-.userpic{
+.userpic {
   text-align: center;
   margin: 0;
   padding: 0;
-
 }
 
-img{
+img {
   margin-bottom: 5px;
   height: 292px;
   margin-top: 18px;
@@ -140,7 +148,7 @@ img{
   text-align: center;
 }
 
-#submit{
+#submit {
   width: 109px;
   height: 54px;
   /*line-height: 54px;*/
@@ -155,7 +163,9 @@ img{
   border-style: none;
 }
 
+
 /*------------footer---------------*/
+
 .footer {
   list-style: none;
   /*display: flex;*/
@@ -165,6 +175,7 @@ img{
   padding: 0;
   text-decoration: none;
 }
+
 .footer>li {
   background-color: #00A5BF;
   height: 38px;
@@ -184,7 +195,7 @@ img{
   /*padding-left: 102px;*/
 }
 
-.copyright{
+.copyright {
   width: 100%;
   height: 72px;
   color: #FFF;
@@ -193,7 +204,7 @@ img{
   line-height: 72px;
 }
 
-.fa-copyright{
+.fa-copyright {
   width: 100%;
   height: 72px;
   color: #FFF;
@@ -202,14 +213,12 @@ img{
   line-height: 72px;
 }
 
-@media (min-width: 545px){
-
+@media (min-width: 545px) {
   ul[class="header"] {
     flex-flow: row nowrap;
     flex: 0 1 60%;
     margin-left: 102px;
   }
-
   ul[class="header"]>li {
     height: 114px;
     width: 22%;
@@ -218,63 +227,56 @@ img{
     margin-left: 0;
     line-height: 114px;
   }
-  ul[class="header"]:first-child{
+  ul[class="header"]:first-child {
     margin-left: 102px;
   }
-
   ul[class="header"]>li>a {
     /*text-align: center;*/
     margin-left: 0;
   }
-/*------------form section-------------*/
-.profile-pic{
-  width: 50%;
-  float: left;
-}
-
-.form-group{
-  margin-bottom: 0;
-}
-
-.text-boxes{
-  /*clear: left;*/
-  width: 50%;
-}
-.userpic{
-  text-align: left;
-  width: 88%;
-}
-
-#name, #email, #password1, #password2{
-  width: 48vw;
-}
-
-.password-flex{
-  margin-top: 50px;
-}
-.bottom-pg-flex{
-  clear: left;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-legend{
-  font-size: 16px;
-}
-.checkbox{
-  flex: 0 0 50%;
-}
-
-/*-----------footer--------------*/
-.footer-flex{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
+  /*------------form section-------------*/
+  .profile-pic {
+    width: 50%;
+    float: left;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .text-boxes {
+    /*clear: left;*/
+    width: 50%;
+  }
+  .userpic {
+    text-align: left;
+    width: 88%;
+  }
+  #name, #email, #password1, #password2 {
+    width: 48vw;
+  }
+  .password-flex {
+    margin-top: 50px;
+  }
+  /*----------------button columns*/
+  .bottom-pg-flex {
+    clear: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  legend {
+    font-size: 16px;
+  }
+  .checkbox {
+    flex: 0 0 50%;
+  }
+  /*-----------footer--------------*/
+  .footer-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   ul.footer {
     display: flex;
     flex-flow: row nowrap;
@@ -288,23 +290,79 @@ legend{
     text-align: center;
     line-height: 114px;
   }
-
-  .copyright{
+  .copyright {
     flex: 1 1 auto;
     height: 114px;
     line-height: 114px;
     text-align: right;
     margin-left: auto;
   }
+  .fa-copyright {
+    height: 114px;
+    text-align: right;
+    line-height: 114px;
+    padding-right: 15px;
+  }
+  @media (min-width: 769px) {
 
-.fa-copyright{
-  height: 114px;
-  text-align: right;
-  line-height: 114px;
-  padding-right: 15px;
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+    }
+    ul[class="header"] {
+      flex: 0 1 50%;
+    }
+
+    .profile-pic {
+      width: 40%;
+      float: left;
+    }
+
+    .text-boxes{
+      width: 100%;
+    }
+
+    .form-group{
+      display: inline-block;
+    }
+
+    label{
+      margin-bottom: 0;
+      /*margin-left: 15px;*/
+    }
+    label[for="name"] {
+      /*clear: left;*/
+    }
+    label[for="email"] {
+      /*float: left;*/
+    }
+
+    #name, #email, #password1, #password2 {
+      width: 24vw;
+      clear: left;
+    }
+    .form-control {
+      width: 60%;
+    }
+/*------------checkboxes at bottom-------*/
+.genres{
+  clear: left;
 }
 
-
-@media (min-width: 769px) {
-
+legend{
+  padding-top: 30px;
 }
+    .bottom-pg-flex {
+      clear: both;
+      justify-content: flex-start;
+    }
+    .checkbox {
+      justify-content: flex-start;
+      flex: 0 0 30%;
+    }
+
+    .footer {
+      flex: 1 0 67%;
+    }
+  }

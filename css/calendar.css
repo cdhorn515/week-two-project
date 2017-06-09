@@ -283,5 +283,23 @@ margin: 1px;
 
 
 @media (min-width: 769px) {
+  ul[class="header"] {
+    flex: 0 1 60%;
+  }
+
+  .num{
+    height: 25%;
+    width: 22%;
+    font-size: 14px;
+    padding-top: 6px;
+
+  }
+  .footer{
+    flex: 1 0 67%;
+  }
+
+  h1, h3{
+    padding: 3.52vh 2.8125vw;
+  }
 
 }
